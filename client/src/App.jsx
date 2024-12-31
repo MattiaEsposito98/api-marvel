@@ -1,11 +1,13 @@
-import GlobalContext from "./contexts/GlobalContext"
+import { GlobalProvider } from "./contexts/GlobalContext"
 import Header from "./layouts/layouts/Header"
+import Index from "./pages/Index"
 
 function App() {
   return (
-    <GlobalContext>
+    <GlobalProvider>
       <Header />
-    </GlobalContext>
+      <Index />
+    </GlobalProvider>
 
   )
 }
