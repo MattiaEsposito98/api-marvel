@@ -1,7 +1,11 @@
 export default function Header() {
+  function home() {
+    location.reload()
+  }
+
   return (
     <header>
-      <h1> Marvel </h1>
+      <h1 onClick={home}> Marvel </h1>
     </header>
   )
 }

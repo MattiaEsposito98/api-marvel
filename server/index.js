@@ -15,7 +15,7 @@ const fetchMarvelCharacters = async () => {
     ts,
     apikey: publicKey,
     hash,
-    limit: 10, // Numero di risultati
+    limit: 20, // Numero di risultati
   };
 
   try {

@@ -1,0 +1,115 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #eecbcb;
+}
+
+ul,
+ol {
+  list-style: none
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+img {
+  height: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*  */
+
+header {
+  background-color: rgb(94, 94, 214);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  h1 {
+    cursor: pointer;
+  }
+}
+
+h1 {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 16px;
+  margin-top: 3rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+form {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-right: 4rem;
+  font-size: larger;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+  }
+
+  button {
+    padding: 12px;
+    border-color: 1px solid black;
+  }
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.clessidra {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  animation: rotate 3s linear infinite;
+  margin-bottom: 1rem;
+}
+
+/* Animare un immagine, rotazione */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  font-size: 2rem;
+  color: #007bff;
+}
