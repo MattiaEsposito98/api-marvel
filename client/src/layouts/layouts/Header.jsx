@@ -8,7 +8,7 @@ export default function Header() {
   const { setQuery } = useContext(GlobalContext)
 
   const handleClick = () => {
-    setQuery('')
+    setQuery('')  //svuotare l'input altrimenti non funziona il navigate
   }
 
 

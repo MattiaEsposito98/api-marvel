@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom"
 import { useEffect, useContext } from "react"
 import GlobalContext from "../contexts/GlobalContext"
+import ButtonNavigate from "../components/ButtonNavigate";
 
 export default function Show() {
   const { name } = useParams(); // Recupera il parametro "name" dalla route
@@ -21,7 +22,9 @@ export default function Show() {
 
   return (
     <div>
+
       <h1 className="title">Dettagli del personaggio</h1>
+      <ButtonNavigate />
       <p>Nome: {name}</p>
     </div>
   );
