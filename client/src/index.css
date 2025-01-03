@@ -6,7 +6,9 @@
 }
 
 html {
-  background-color: #eecbcb;
+  background-color: #ebee22;
+  font-family: 'Marvel';
+  font-size: 22px;
 }
 
 ul,
@@ -27,23 +29,21 @@ button {
 }
 
 /*  */
-
-header {
-  background-color: rgb(94, 94, 214);
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-
-  h1 {
-    cursor: pointer;
-  }
-}
-
-h1 {
-  margin-top: 0.5rem;
-  text-align: center;
+.title {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 2rem;
+  color: white;
+  background-color: #ed1d24;
+  padding: 10px 10px;
+  border: 5px solid #d4c9c9;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /* Spaziatura tra le lettere */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  /* Effetto ombra per dare profondità */
+  width: fit-content;
+  /* Larghezza pari al contenuto */
+  margin: 10px auto;
 }
 
 .container {
@@ -86,7 +86,7 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 80vh;
+  height: 60vh;
   overflow: hidden;
 }
 
@@ -112,4 +112,89 @@ form {
 .loading {
   font-size: 2rem;
   color: #007bff;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.notFound {
+  font-size: 2rem;
+  color: #6c13c0;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+/* Form */
+.form-search {
+  font-size: 18px;
+  color: #0922fc;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+input {
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  /* Rimuove il bordo blu predefinito */
+  background-color: #f9f9f9;
+  color: #a0230d;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Effetto ombra interno */
+  transition: all 0.3s ease-in-out;
+  /* Transizione fluida */
+  font-style: oblique;
+}
+
+input::placeholder {
+  color: #c3d1cfa9;
+  font-size: 1rem;
+  font-style: italic;
+  opacity: 1;
+}
+
+.searchButton {
+  position: relative;
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ff3c00;
+  background-color: transparent;
+  border: 2px solid #ff3c00;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.searchButton::before,
+.searchButton::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #ff3c00;
+  transition: width 0.4s ease;
+  z-index: -1;
+}
+
+.searchButton::after {
+  top: auto;
+  bottom: 0;
+  right: 0;
+  left: auto;
+}
+
+.searchButton:hover::before {
+  width: 100%;
+}
+
+.searchButton:hover::after {
+  width: 100%;
+}
+
+.searchButton:hover {
+  color: #fff;
 }

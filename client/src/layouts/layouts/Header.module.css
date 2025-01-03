@@ -1,0 +1,8 @@
+.img {
+  display: block;
+  height: 300px;
+  width: 100%;
+  object-fit: unset;
+  margin-top: -70px;
+
+}
