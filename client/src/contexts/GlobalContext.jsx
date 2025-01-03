@@ -31,7 +31,7 @@ export const GlobalProvider = ({ children }) => {
 
   const searchCharacter = (name) => {
     setIsLoading(true); // Avvia il caricamento
-    axios.get(`https://gateway.marvel.com/v1/public/characters?ts=1735644658113&apikey=5e51543a849647499002244edf04a53b&hash=f9f3f815ed1971dc380fcbe012dba70d&name=${name}`)
+    axios.get(`https://gateway.marvel.com/v1/public/characters?ts=1735644658113&apikey=5e51543a849647499002244edf04a53b&hash=f9f3f815ed1971dc380fcbe012dba70d&nameStartsWith=${name}`)
       .then(res => {
         setCharacters(res.data.data.results);
       })
@@ -40,6 +40,8 @@ export const GlobalProvider = ({ children }) => {
       })
       .finally(() => setIsLoading(false)); // Fine caricamento
   };
+
+
 
   return (
     <GlobalContext.Provider value={{ characters, setQuery, isLoading, searchCharacter, selectedCharacter, setSelectedCharacter }}>
