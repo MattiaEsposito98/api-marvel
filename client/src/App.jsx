@@ -18,7 +18,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </GlobalProvider>
-  );
+  )
 }
 
-export default App;
+export default App
