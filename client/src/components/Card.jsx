@@ -10,7 +10,7 @@ export default function Card({ character }) {
         src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
         alt={`Immagine di ${character.name}`}
       />
-      <p>{character.description || 'Nessuna descrizione disponibile.'}</p>
+      <p>{character.description || 'No description available.'}</p>
       <Link to={`/show/${character.name}`}>
         <button className={style.button}>Info</button>
       </Link>

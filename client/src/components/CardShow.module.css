@@ -1,0 +1,22 @@
+.containerHeader {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.titleShow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imgShow {
+  width: 200px;
+  height: 200px;
+}
+
+.containerMain {
+  display: flex;
+  justify-content: space-around;
+}
