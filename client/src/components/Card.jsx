@@ -14,7 +14,7 @@ export default function Card({ character }) {
           alt={`Immagine di ${character.name}`}
         />
         <p>{character.description || 'No description available.'}</p>
-        <Link to={`/show/${character.name}`}>
+        <Link to={`/show/${encodeURIComponent(character.name)}`}>
           <button className={style.button}>Info</button>
         </Link>
       </div>

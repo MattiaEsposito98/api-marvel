@@ -41,12 +41,12 @@ export default function CardShow({ character }) {
         {
           character.events?.items?.length > 0 ? (
             <ul className="col">
-              <h4 >movie list:</h4>
+              <h4 >Movie list:</h4>
               {character.events.items.map((event, index) => (
                 <li key={index}>{event.name}</li>
               ))}
             </ul>) : (
-            <p>No movies  available</p>
+            <h4>No Movies  Available</h4>
           )
         }
 
