@@ -24,7 +24,7 @@ const fetchMarvelCharacters = async () => {
 
     console.log('Personaggi Marvel:');
     characters.forEach((character, index) => {
-      console.log(`${index + 1}. ${character.name} - ${character.description || 'Nessuna descrizione disponibile'}`);
+      console.log(`${index + 1}. ${character.name} - ${character.description || 'No description avaiable'}`);
     });
   } catch (error) {
     console.error('Errore nella chiamata API:', error);
